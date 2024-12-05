@@ -1,6 +1,6 @@
 /* **************************************************** start *************************************************** */
-import React, { useState } from 'react';
-// import './designPage.css';
+import { useState } from 'react';
+import './designPage.css';
 import oval from '../../assets/oval.jpg';
 import ocean from '../../assets/ocean.jpg';
 /* **************************************************** end *************************************************** */

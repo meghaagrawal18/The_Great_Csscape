@@ -1,14 +1,17 @@
 import React from "react";
-import "../css/Errorfix.css";
-import logo from "../assets/profile.png"
+import "./Errorfix.css";
+import logo from "../../assets/profile.png"
 
 const ProfilePage = () => {
-  const [likes, setLike] = React.useState("0");
+  const [likes, setLikes] = React.useState("0");
+  const phone = 9167274747;
+  const linkedin = 'https://linkedin.com/'
+  const github = 'https://github.com/'
+
 
   const handleLike = () => {
     setLikes(likes + 1);
   };
-
 
 
   return (
@@ -32,12 +35,12 @@ const ProfilePage = () => {
             </p>
           </div>
         </div>
-   /   
+    </header>
       <main className="profile-content">
         {/* Skills Section */}
         <section className="profile-section">
           <h3 className="section-title">Skills</h3>
-          <ul className:"skills-list">
+          <ul className="skills-list">
             <li>React, Angular, and Vue.js</li>
             <li>Node.js, Express, and Python/Django</li>
             <li>RESTful and GraphQL API development</li>
@@ -127,7 +130,7 @@ const ProfilePage = () => {
         </section>
 
         {/* Certifications Section */}
-        <section class="profile-section">
+        <section className="profile-section">
           <h3 className="section-title">Certifications</h3>
           <ul className="certifications-list">
             <li>Certified Kubernetes Administrator (CKA)</li>
@@ -181,6 +184,6 @@ const ProfilePage = () => {
       </main>
     </div>
   );
+}
 
-
-export default Profile-Page;
+export default ProfilePage;

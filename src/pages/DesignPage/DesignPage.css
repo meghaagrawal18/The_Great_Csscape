@@ -1,5 +1,75 @@
-/* write your css here */
-a{
+/* Base link styles */
+a {
     text-decoration: none;
     color: black;
+}
+
+/* Container and row layout */
+.z-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.z-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Column styling */
+.z-col {
+    flex: 1;
+}
+
+/* Image styling */
+.z-img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Content column styling */
+.z-content-column {
+    padding: 20px;
+}
+
+.z-content-column h1 {
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.z-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.z-btn:hover {
+    background-color: #0056b3;
+}
+
+/* About us section styling */
+.z-about-us-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.z-divider {
+    width: 100px;
+    margin: 20px auto;
+    border-top: 2px solid #333;
+}
+
+/* Footer styling */
+.z-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-top: 50px;
 }

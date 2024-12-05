@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import axios from 'axios';
-import './backend.css';
 
 const PostalLookup = () => {
   const [pincode, setPincode] = useState('');
@@ -24,7 +23,7 @@ const PostalLookup = () => {
   };
 
   return (
-    <div className="container">
+    <div>
       <h2>Postal PIN Code Lookup</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -39,7 +38,7 @@ const PostalLookup = () => {
         <button type="submit">Search</button>
       </form>
 
-      {error && <p className="error">Error: {error}</p>}
+      {error && <p style={{ color: 'red' }}>{error}</p>}
       
       {results.length > 0 && (
         <div>
